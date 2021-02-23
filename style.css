@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: pink;
+}
+
+.container{
+    width: 70%;
+}
+
+
+/* Navbar */
+
+header{
+    display: flex;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    margin-left: 20rem;
+
+}
+
+header li{
+    margin-right: 7rem;
+    
+}
+
+header img{
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li a{
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+    color: green;
+    cursor: pointer;
+}
+
+header li a:hover{
+    color: greenyellow;
+    border-bottom: 1px solid blue;
+
+}
+
+
+/*Showcase */
+
+.showcase{
+    background: url('yoga.jpg') no-repeat center center /cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    margin-top: 15px;
+    width: 100vw;
+}
+
+.showcase h2{
+    margin-top: 25px;
+    color: blue;
+    font-size: 43px;
+}
+
+
+/* content */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+    margin-top: 15px;
+    margin: 8px;
+}
+
+.cards h3{
+    color: blueviolet;
+}
+
+.cards p{
+    color: green;
+}
+
+.cards h3{
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+footer{
+    padding: 35px;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 1200px){
+    header{
+        display: flex;
+        justify-content: flex-end;
+
+    
+    }
+}
+
+@media (max-width: 768px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+    header li{
+        margin-right: 4rem;
+        
+    }
+
+    header img{
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+}
+
+@media (max-width: 500px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .showcase{
+        display: none;
+    }
+
+    .nav ul{
+        flex-direction: column;
+    }
+
+    header li{
+        flex-direction: column;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+}
