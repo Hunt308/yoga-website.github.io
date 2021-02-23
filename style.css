@@ -48,6 +48,7 @@ header li a{
     padding-bottom: 2px;
     color: green;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 header li a:hover{
@@ -60,19 +61,37 @@ header li a:hover{
 /*Showcase */
 
 .showcase{
-    background: url('yoga.jpg') no-repeat center center /cover;
+    background: url('showcase.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 350px;
+    align-items: flex-start;
+    height: 550px;
+    width: 100vw;
     margin-top: 15px;
     width: 100vw;
 }
 
+
+
 .showcase h2{
     margin-top: 25px;
-    color: blue;
-    font-size: 43px;
+    color: lightblue;
+    font-size: 55px;
+    margin: 50px;
+}
+
+.showcase p{
+    line-height: 2.5;
+    color: green;
+    margin-left: 50px;
+    background-color: yellow;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.showcase .btn{
+    margin-top: 2rem;
 }
 
 
@@ -83,7 +102,7 @@ header li a:hover{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 1.3rem;
     margin: 8px;
 }
 
@@ -145,6 +164,26 @@ footer{
         margin-left: 3rem;
 
     }
+
+    .showcase p{
+        line-height: 2.5;
+        color: green;
+        margin-left: 50px;
+        background-color: yellow;
+        padding: 0.5rem;
+        border-radius: 5px;
+        font-size: 0.6rem;
+    }
+
+    header img{
+        width: 50px;
+        height: 50px;
+    }
+
+    header li a{
+        font-size: 0.7rem;
+    }
+
 }
 
 @media (max-width: 768px){
@@ -160,13 +199,36 @@ footer{
 
 
     header li{
-        margin-right: 4rem;
+        margin-right: 2rem;
+
         
     }
 
+
+    .showcase p{
+        line-height: 2.5;
+        color: green;
+        margin-left: 50px;
+        background-color: yellow;
+        padding: 0.5rem;
+        border-radius: 5px;
+        font-size: 0.5rem;
+    }
+
     header img{
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
+        width: 120px;
+        height: 120px;
+        margin-left: 20rem;
+    }
+
+    header li a{
+        font-size: 0.9rem;
+    }
+
+    .btn{
+        margin-left: 6rem;
+        margin-bottom: 10px;
+
     }
 }
 
@@ -191,7 +253,7 @@ footer{
         flex-direction: row;
     }
     .btn{
-        margin-left: 10rem;
+        margin-left: 7rem;
         margin-bottom: 10px;
 
     }
